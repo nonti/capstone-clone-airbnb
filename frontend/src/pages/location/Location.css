@@ -1,0 +1,96 @@
+.location {
+  padding: 20px;
+  background-color: #fff5f8; 
+  min-height: 100vh;
+}
+
+.location-list {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 20px; /* Add spacing between the cards */
+  align-items: center; /* Center the list */
+}
+
+.location-card {
+  display: flex; /* Change to flex for a horizontal layout */
+  align-items: center;
+  background-color: #ffebf1; /* Light pink card background */
+  border: 1px solid #ffcce0; /* Slightly darker pink border */
+  border-radius: 12px;
+  text-decoration: none;
+  color: #4d4d4d; /* Soft gray text color */
+  width: 70%; /* Take more width for list view */
+  max-width: 800px; /* Limit the card width */
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3); /* Light pink shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.location-card:hover {
+  transform: translateY(-4px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.5); /* Larger shadow on hover */
+}
+
+.location-image {
+  max-width: fit-content; 
+  height: 150px; 
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin-left: 10px;
+}
+
+.location-card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-card-content h2 {
+  margin: 0 0 10px;
+  color: #ff69b4;
+}
+
+.location-description {
+  list-style: none; 
+  padding: 0;
+  margin: 10px 0 0 0; 
+}
+
+.location-description li {
+  margin: 5px 0;
+  color: #4d4d4d; 
+}
+
+.location-description li span {
+  font-weight: bold;
+  color: #ff69b4; 
+  
+}
+
+.location-page h1 {
+  text-align: center;
+  color: #ff69b4; 
+  margin-bottom: 30px;
+  font-family: 'Comic Sans MS', cursive; 
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+  font-size: 1em;
+  justify-content: center; 
+}
+
+.stars {
+  color: #ffcc00; 
+  font-size: 1.2em; 
+  margin-left: 5px; 
+}
+
+.review-text {
+  margin-left: 5px; 
+  color: #888;
+}

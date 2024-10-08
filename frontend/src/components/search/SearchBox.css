@@ -1,0 +1,169 @@
+.header-bottom {
+  background: #fff;
+  display: flex;
+  width: 850px;
+  border-radius: 32px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  height: 66px;
+  position: relative;
+  margin: 10px auto 0px auto; 
+}
+
+.header-search {
+  width: 284px;
+  height: 33px;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.search-where > div {
+  padding-bottom: 2px;
+}
+
+.search-input input{
+  padding:0;
+  border: none;
+  outline: none;
+}
+.border-divider {
+  border-right: 1px solid #ddd;
+  height: 32px;
+  margin-top: -3px;
+}
+
+.search-checkin > div {
+  padding: 2px;
+  width: 140px;
+}
+
+.search-checkin {
+  display: block;
+  width: 100%;
+  margin: 5px 15px;
+  padding-top: 15px;
+  align: center;
+}
+
+.search-button {
+  height: 38px;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #6a6a6a;
+}
+
+.search-checkout > div {
+  padding: 2px;
+  width: 140px;
+}
+
+.search-checkout {
+  display: block;
+  width: 100%;
+  margin: 5px 15px;
+  padding-top: 15px;
+}
+
+
+.search-who > div {
+  padding: 2px;
+  width: 140px;
+}
+
+.search-who {
+  display: block;
+  width: 100%;
+  margin: 5px 15px;
+  padding-top: 15px;
+}
+
+.search  .search-icon  {
+font-size: 16px;
+width: 30px;  
+height: 30px;
+border-radius: 30px;
+border: none;
+background: rgb(255, 56, 92);
+outline: none;
+color: white;
+cursor: pointer;
+padding: 10px;
+margin-left: 50px;
+margin-top: 10px;
+}
+
+button {
+background: transparent;
+outline:none;
+border: none;
+}
+
+.date-picker {
+  border: none;
+  ouline: none;
+  }
+  .date-picker::placeholder {
+    color: var(--font-grey);
+    font-size: 16px;
+  }
+  .date-picker:focus {
+  outline: none;
+  }
+
+  .search-who {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .search-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    margin-left: 0.5rem;
+  }
+  
+  .guest-popup {
+    position: absolute; 
+    top: 100%;
+    right: -350px; 
+    margin-top: 2px; 
+    border-radius: 10px;
+}
+
+  .guest-selector {
+    background-color: #fff; 
+    padding: 16px; 
+    border-radius: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+  }
+  
+  .guest-button {
+    background-color: #ff385c; 
+    border: none; 
+    border-radius: 50px; 
+    padding: 0px; 
+    color: #fff;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+  }
+  
+  .guest-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .guest-input {
+    width: 40px;
+    text-align: center; 
+    border: 1px solid #ccc; 
+    border: none; 
+    background-color: #fff; 
+  }
+  
