@@ -14,10 +14,14 @@ import Listing from './pages/listing/Listing';
 import Admin from './pages/admin/Admin';
 import Reservations from './pages/reservations/Reservations';
 import CreateListing from './pages/listing/CreateListing';
+import Signin from './pages/auth/Signin';
+import Signup from './pages/auth/Signup';
+import { ToastContainer } from 'react-toastify';
 const App = () => {
   return (
     <div>
       <Header/>
+      <ToastContainer/>
       <Routes>
         <Route path="/" element={<>
           <Banner/>
@@ -28,6 +32,8 @@ const App = () => {
           <Inspiration/>
           <Footer/>        
         </>}/>
+        <Route path="/signin" element={<Signin/>}/>
+        <Route path="/signup" element={<Signup/>}/>
         <Route path="/locations" element={<Location/>}/>
         <Route path="/location-info/:id" element={<LocationInfo/>}/>
         <Route path="/listings" element={<Listing/>}/>

@@ -101,9 +101,41 @@
   border: 1px solid grey;
   border-radius: 3rem;
   padding: 0.35rem;
-  color: font-grey;
+  color: grey;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  border-radius: 20px;
+  display: none;
+  margin: 2px 15px 20px -120px;
+  padding: 20px 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content span {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content span:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .header-bottom{
   background: #fff;
@@ -219,7 +251,7 @@ margin-bottom: 0.2rem;
   border: none;
   background: rgb(255, 56, 92);
   outline: none;
-  color: white;
+  color: #fff;
   cursor: pointer;
   padding: 0.6rem;
   margin-left: 9rem;
@@ -246,24 +278,26 @@ margin-bottom: 0.2rem;
   margin-left: 10px;
   margin:6rem;
  }
+
 button {
-background: transparent;
-outline:none;
-border: none;
+  background: transparent;
+  outline:none;
+  border: none;
 }
 
 .date-picker {
-border: none;
-ouline: none;
-width: 70%;
+  border: none;
+  outline: none;
+  width: 70%;
 
 }
+
 .date-picker::placeholder {
   color: grey;
   font-size: 16px;
 }
 .date-picker:focus {
-outline: none;
+  outline: none;
 }
 
 .search-box {
@@ -273,6 +307,7 @@ outline: none;
 .border-divider {
   border-bottom: 1px solid grey;
 }
+
 .search-bar-container {
   display: flex;
   justify-content: flex-start; 

@@ -30,7 +30,7 @@ const Reservations = () => {
                     <th>Actions</th>
                   </tr>
                 </thead>
-                <tbody>
+                {/* <tbody>
                   {reservations.map((reservation) => (
                     <tr key={reservation.id}>
                       <td>{reservation.name}</td>
@@ -42,7 +42,7 @@ const Reservations = () => {
                       </td>
                     </tr>
                   ))}
-                </tbody>
+                </tbody> */}
               </table>
             </>
           )}

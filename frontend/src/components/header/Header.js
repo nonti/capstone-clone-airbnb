@@ -102,10 +102,10 @@ const Header = () => {
           </div>
         )}
 
-        <div className="header-center-search">
+        {/* <div className="header-center-search">
           <input type="text" placeholder="Search" />
           <SearchRoundedIcon className="search-icon" />
-        </div>
+        </div> */}
     
         <div className="profile-container">
           <div className="become-a-host">Become a host</div>
@@ -113,12 +113,29 @@ const Header = () => {
             <LanguageIcon className="lang-icon" sx={{ fontSize: "1.3rem" }} />
           </div>
           <div className="profile-div">
-            <MenuRoundedIcon />
-            <AccountCircleIcon />
+          <div className="dropdown">
+                <MenuRoundedIcon className="dropbtn" />
+                <div className="dropdown-content">
+                    <>
+                      <span onClick={() => navigate('/signin')} className='link'>Sign In</span>
+                      <span onClick={() => navigate('/signup')} className='link'>Sign Up</span>
+                    </>
+                    <>
+                        <>
+                          <span onClick={() => navigate('/reservations')} className='link'>Reservations</span>
+                          <span onClick={() => navigate('/bookings')} className='link'>Bookings</span>
+                        </>
+                        <>
+                          <span onClick={() => navigate('/reservations')} className='link'>View Reservations</span>
+                        </>
+                      <span className='link'>Signout</span>
+                    </>
+                </div>
+                <AccountCircleIcon className="profile-icon" />
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div className="border-divider"></div>
+          </div>
       {/* SearchBox remains hidden on scroll */}
       {!isScrolled && <div className="header-bottom">
         <div className="header-search">
