@@ -1,33 +1,32 @@
 .location {
   padding: 20px;
-  background-color: #fff5f8; 
   min-height: 100vh;
 }
 
 .location-list {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  gap: 20px; /* Add spacing between the cards */
-  align-items: center; /* Center the list */
+  flex-direction: column; 
+  gap: 20px; 
+  align-items: center; 
 }
 
 .location-card {
-  display: flex; /* Change to flex for a horizontal layout */
+  display: flex; 
   align-items: center;
-  background-color: #ffebf1; /* Light pink card background */
-  border: 1px solid #ffcce0; /* Slightly darker pink border */
+  background-color:transparent; 
+  border: 1px solid #ffcce0;
   border-radius: 12px;
   text-decoration: none;
-  color: #4d4d4d; /* Soft gray text color */
-  width: 70%; /* Take more width for list view */
-  max-width: 800px; /* Limit the card width */
-  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3); /* Light pink shadow */
+  color: #4d4d4d; 
+  width: 70%;
+  max-width: 800px; 
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3); 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .location-card:hover {
-  transform: translateY(-4px); /* Lift effect on hover */
-  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.5); /* Larger shadow on hover */
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(255, 182, 193, 0.5); 
 }
 
 .location-image {

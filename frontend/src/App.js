@@ -11,6 +11,9 @@ import Footer from './components/footer/Footer';
 import Location from './pages/location/Location';
 import LocationInfo from './pages/location/LocationInfo';
 import Listing from './pages/listing/Listing';
+import Admin from './pages/admin/Admin';
+import Reservations from './pages/reservations/Reservations';
+import CreateListing from './pages/listing/CreateListing';
 const App = () => {
   return (
     <div>
@@ -28,6 +31,9 @@ const App = () => {
         <Route path="/locations" element={<Location/>}/>
         <Route path="/location-info/:id" element={<LocationInfo/>}/>
         <Route path="/listings" element={<Listing/>}/>
+        <Route path='/admin' element={<Admin/>}/>
+        <Route path='/reservations' element={<Reservations/>}/>
+        <Route path='/create-listing' element={<CreateListing/>}/>
       </Routes>
     </div>
   )

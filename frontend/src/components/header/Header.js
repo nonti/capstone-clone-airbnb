@@ -102,6 +102,11 @@ const Header = () => {
           </div>
         )}
 
+        <div className="header-center-search">
+          <input type="text" placeholder="Search" />
+          <SearchRoundedIcon className="search-icon" />
+        </div>
+    
         <div className="profile-container">
           <div className="become-a-host">Become a host</div>
           <div className="become-a-host">
